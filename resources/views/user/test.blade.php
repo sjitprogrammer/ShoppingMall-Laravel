@@ -17,24 +17,27 @@
         font-size: 0.8rem;
         color: #333;
     }
+    p.card-text{
+        min-height: 90px;
+    }
 </style>
 <br>
 <div class="row">
-    @for ($i = 0; $i <10; $i++)
+    @foreach($products as $product)
     <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card">
-            <img class="card-img-top placeholder-img" src="https://smartsolutioncomputer.com/upload-img/Products/New-Products/28b76728c9abcb2a39dceb037100b811.jpg" alt="Card image">
+            <img class="card-img-top placeholder-img" src="{{$product->image}}" alt="Card image">
             <div class="card-body">
-            <h4 class="card-title price-card">NoteBook Lenovo</h4>
-            <p class="card-text description">LENOVO โน๊ตบุ๊ค (15.6", Intel Core i7, Ram 16GB, 512GB) รุ่น LEGION Y540-15IRH I7-9750HF + กระเป๋า</p>
-            <div class="float-left price-card"> $250</div>
+            <h4 class="card-title price-card">{{$product->title}}</h4>
+            <p class="card-text description">{{$product->description}}</p>
+            <div class="float-left price-card"> ฿{{$product->price}}</div>
             <div class="float-right"> 
                 <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-cart-plus"></i>&nbsp;Add to Cart</a>
             </div>
         </div>
         </div>
     </div>
-    @endfor
+    @endforeach
     
 </div>
 @endsection
