@@ -8,13 +8,17 @@
 </p>
 
 Main
+<br>
 <img src="https://github.com/sjitprogrammer/ShoppingMall-Laravel/blob/master/public/app/images/shoppingmall_main.PNG" width="600">
 
 Cart
+<br>
 <img src="https://github.com/sjitprogrammer/ShoppingMall-Laravel/blob/master/public/app/images/shoppingmall_cart.PNG" width="600">
 
 Checkout
+<br>
 <img src="https://github.com/sjitprogrammer/ShoppingMall-Laravel/blob/master/public/app/images/shoppingmall_checkout.PNG" width="600">
 
 SignIn
+<br>
 <img src="https://github.com/sjitprogrammer/ShoppingMall-Laravel/blob/master/public/app/images/shoppingmall_signin.PNG" width="600">
